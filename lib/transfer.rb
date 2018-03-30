@@ -20,8 +20,9 @@ class Transfer
   # def transfer
   # end
 
-  def execute_transaction(money)
-    BankAccount.balance.transfer << money
+  def execute_transaction
+    if balance.amount 
+      
   end
 
   def reverse_transfer
