@@ -21,7 +21,8 @@ class Transfer
   # end
 
   def execute_transaction
-   self.balance.amount
+   if valid?
+     self.balance.amount
   end
 
   def reverse_transfer
