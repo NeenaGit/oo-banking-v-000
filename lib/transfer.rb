@@ -21,8 +21,9 @@ class Transfer
   # end
 
   def execute_transaction
-    if balance.amount 
-      
+    if balance.amount
+    end
+
   end
 
   def reverse_transfer
