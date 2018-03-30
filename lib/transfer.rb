@@ -22,7 +22,7 @@ class Transfer
 
   def execute_transaction
    if valid? && sender.balance > amount && self.status
-     self.balance.amount
+     sender.balance -= amount
   end
 
   def reverse_transfer
